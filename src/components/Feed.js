@@ -18,5 +18,3 @@ const material_ui_container = material_ui_Styles();
       </div>
   )
 }
-
-export default Feed;
