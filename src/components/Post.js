@@ -1,4 +1,4 @@
-import {  makeStyles,Container } from '@material-ui/core'
+import {  makeStyles} from '@material-ui/core'
 
 import React from 'react'
 
@@ -12,15 +12,15 @@ const material_ui_Styles = makeStyles((theme) =>(
 }
 ))
 
- const Feed= () => {
+ const Post= () => {
 
 const material_ui_container = material_ui_Styles();
+
+
   return (
-    <Container className={material_ui_container.Container}>    
-     Feed
-    </Container>
+    <>hello</>
 
      
   )
 }
-export default Feed;
+export default Post;
