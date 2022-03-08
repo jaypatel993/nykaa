@@ -7,7 +7,9 @@ const  material_ui_Styles = makeStyles((theme) =>(
 {
 toolbar :{
     display : "flex",
-    justifyContent : "space-between" ,
+    justifyContent : "space-between",
+  //  backgroundColor : "black",
+  // justifyContent : "space-around"
     
 },
 
@@ -32,7 +34,7 @@ search: {
     display : 'flex',
     alignItems : "center",
     borderRadius: theme.shape.borderRadius,
-    width : '70%',
+    width : '60%',
     backgroundColor: alpha(theme.palette.common.white, 0.15),
     '&:hover': {
                     backgroundColor: alpha(theme.palette.common.white, 0.25),
@@ -82,8 +84,6 @@ badges:{
 
 }
 ));
-
-
 const Navbar   = () => { 
   
 
@@ -92,15 +92,13 @@ const Navbar   = () => {
 
   return (
 
-    <AppBar position='Fixed'>
+    <AppBar position='fixed'>
 
     <Toolbar className={Navbar_classes.toolbar}>
 
     <Typography variant="h6" className={Navbar_classes.logolg}>lamaDEV</Typography>
 
-    <Typography variant="h6" className={Navbar_classes.logoSm }>lama</Typography>
-
-
+    <Typography variant="h6" className={Navbar_classes.logoSm}>lama</Typography>
 
     <div className = {Navbar_classes.search}>
 
@@ -110,11 +108,7 @@ const Navbar   = () => {
 
     <Cancel className={Navbar_classes.cancel} onClick={()=>setOpen(false)}/> 
 
-
     </div>
-
-
-
     <div className={Navbar_classes.icons}> 
 
     <Search className={Navbar_classes.searchButton} onClick={()=>setOpen(true)}/>

@@ -8,17 +8,20 @@ const material_ui_Styles = makeStyles((theme) =>(
 {
 
   Container: {
-   
-  
-    height : "100vh",
-    color :"white",
+    height : "150vh",
+    color :"black",
     paddingTop: theme.spacing(10),
+
+    position:"sticky",
+    top:0,
+  
     backgroundColor:theme.palette.primary.main,
     [theme.breakpoints.up('sm')]:
     {
       backgroundColor:"white",
       color:"#555",
       border : "1px solid #ece7e7",
+      
      },
 },
   
@@ -48,8 +51,7 @@ icons: {
 )
 );
 
-
- const Leftbar= () => {
+const Leftbar= () => {
  
 const material_ui_container = material_ui_Styles();
 
@@ -98,7 +100,5 @@ const material_ui_container = material_ui_Styles();
       </Container>
   )
 };
-
-
 
 export default Leftbar;
