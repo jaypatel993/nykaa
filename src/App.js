@@ -24,18 +24,22 @@ const material_ui_Styles = makeStyles((theme)=>
  
 
 const material_ui_container = material_ui_Styles();
-  return (
-    <div>
-     <Navbar position="fixed"/>
-     <Grid container>
-       <Grid item sm={2} sx={2}><Leftbar/></Grid>
-       <Grid item sm={7} sx={10}><Feed/></Grid>
-       <Grid item sm={3} className ={material_ui_container.right}><Rightbar/></Grid>   
-     </Grid>
-
-     <Add/>
-      </div>
-  )
-};
-
+return (
+  <div>
+    <Navbar />
+    <Grid container>
+      <Grid item sm={2} xs={2}>
+        <Leftbar />
+      </Grid>
+      <Grid item sm={7} xs={10}>
+        <Feed />
+      </Grid>
+      <Grid item sm={3} className={material_ui_container.right}>
+        <Rightbar />
+      </Grid>
+    </Grid>
+    <Add />
+  </div>
+);
+ };
 export default App;
